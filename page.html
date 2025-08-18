@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Class Topper</title>		
+		<link rel="stylesheet" type="text/css" href="static/styles/styles.css"></link>
+	</head>
+	<body>
+		<div align="center">
+			<div align="center" class="border">
+				<h2><i><b>This Year's Class Topper:</b></i></h2>
+				{%if StudentID%}
+				<p>The person who got the highest mark is {(%StudentID%)}!</p>
+				<a href="/" class="btn">Entry Page :)</a>
+
+				{%else%}
+				<h1 class="bottom"> Click the button below to see this year's class topper!</h1>
+				<a href ="/winner" class="btn">Today's Winner!</a>
+				{%endif%}
+		
+		</div>
+		</div>
+
+	</body>
+</html>
